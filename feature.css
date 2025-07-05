@@ -1,0 +1,506 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Arial, sans-serif;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll bar */
+}
+
+.container {
+    background-color: white;
+    border: 1px solid rgb(183, 183, 183);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 225px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #00000099;
+}
+
+nav ul li a.active {
+    color: #003300;
+}
+
+.navbar ul li:last-child a {
+    color: #00000099;
+}
+
+.navbar ul button {
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 3px solid gray;
+    font-weight: 600;
+    color: gray;
+    background-color: white;
+}
+
+.download-btn:hover {
+    background-color: #003300;
+    color: white;
+    border: 3px solid #003300;
+
+}
+
+
+
+.navbar ul li:not(:last-child) {
+    border-bottom: none !important;
+    border-right: none !important;
+}
+
+
+
+.navbar .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px !important;
+}
+
+.logo img {
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*-------------Header--------------*/
+
+.header {
+    width: 100vw;
+    margin: 0 auto;
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    /* background: rgba(0, 0, 0, 0.6); optional overlay */
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px
+}
+
+.content img {
+    width: 40%
+}
+
+.heading {
+    max-width: 700px;
+    /* background-color: yellow; */
+    margin: auto;
+    line-height: 1.7;
+}
+
+.heading h1 {
+    text-align: left;
+    font-size: 80px;
+    margin: 0;
+    color: #1f78c1;
+
+}
+
+.app {
+    color: #003300
+}
+
+.heading p {
+    font-size: 16px;
+    color: #333333
+}
+
+/*-------------Responsive header ---------*/
+
+@media (max-width: 1135px) {
+
+    .content {
+        flex-direction: column;
+        padding: 30px;
+        font-size: 50px;
+    }
+
+    .heading {
+        line-height: 1.7;
+        max-width: 100%;
+    }
+
+    .heading h1 {
+        font-size: 50px;
+        margin: 0
+    }
+
+    .content img {
+        display: none
+    }
+}
+
+/*------------prayer Time------------*/
+
+.Prayer-section {
+    width: 100vw;
+    /* background-color: whitesmoke; */
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+    /* margin-top: 80px */
+}
+
+.overlay1 {
+    /* background: rgba(0, 0, 0, 0.6); optional overlay */
+    max-width: 1200px;
+    margin: auto;
+    /* background-color: lightgray; */
+    margin-top: 50px;
+    display: flex;
+    gap: 50px
+}
+
+.prayer-body {
+    width: 1100px;
+    /* background-color: gray; */
+    margin: auto;
+    display: flex;
+    justify-content: left;
+}
+
+.prayer-content {
+    padding: 20px 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: violet; */
+
+}
+
+.prayer-content h1 {
+    font-size: 30px;
+    margin: 0;
+    color: #003300;
+    margin-bottom: 5px
+}
+
+.prayer-content h3 {
+    margin: 0;
+    color: #008000;
+    font-size: 18px;
+    margin-bottom: 25px
+}
+
+.prayer-content p {
+    margin: 0;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.prayer-images {
+    width: 800px;
+    height: 300px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prayer-images p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 10px
+}
+
+.prayer-images img {
+    width: 150px
+}
+
+/*--------Responsive Design--------*/
+
+@media(max-width: 1135px) {
+    .overlay1 {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .prayer-body {
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .prayer-content {
+        padding: 40px;
+        margin-top: -50px
+    }
+
+    .prayer-content h1 {
+        font-size: 30px
+    }
+
+    .prayer-images {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+        /* background-color: blue; */
+        height: 600px;
+        justify-content: center;
+    }
+
+    .prayer-images img {
+        width: 200px;
+
+    }
+
+    .prayer-images p {
+        font-size: 40px
+    }
+}
+
+/*----------------Qibla Direction-----------*/
+
+.Qibla-direction {
+    width: 100vw;
+    /* height: 75vh; */
+    /* background-color: red; */
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px
+}
+
+.overlay2 {
+    /* background: rgba(0, 0, 0, 0.6); optional overlay */
+    max-width: 1200px;
+    margin: auto;
+    /* background-color: rgb(54, 54, 54); */
+    /* margin-top: 80px; */
+    display: flex;
+    gap: 50px
+}
+
+.Qibla-content {
+    text-align: end;
+}
+
+.Qibla-image {
+    display: flex;
+    justify-content: center
+}
+
+.Qibla-image img {
+    width: 95%;
+    margin-top: 10px
+}
+
+.Qibla-content {
+    padding: 20px 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: violet; */
+
+}
+
+.Qibla-content h1 {
+    font-size: 30px;
+    margin: 0;
+    color: #003300;
+    margin-bottom: 5px
+}
+
+.Qibla-content h3 {
+    margin: 0;
+    color: #008000;
+    font-size: 18px;
+    margin-bottom: 25px
+}
+
+.Qibla-content p {
+    margin: 0;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.Qibla-direction-page {
+    width: 1100px;
+    /* background-color: gray; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Qibla-direction-page img {
+    width: 300px
+}
+
+/*-------------Responsive Design-----------*/
+
+@media(max-width: 1135px) {
+    .overlay2 {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .Qibla-direction-page {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Qibla-direction-page img {
+        width: 250px;
+        margin-top: -50px
+    }
+
+    .Qibla-content {
+        text-align: start;
+        padding: 40px;
+        margin-top: -50px;
+    }
+}
+
+/*------------Al Quran------------*/
+
+.Quran-section {
+    width: 100vw;
+    /* background-color: whitesmoke; */
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+    /* margin-top: 80px */
+}
+
+.overlay3 {
+    /* background: rgba(0, 0, 0, 0.6); optional overlay */
+    max-width: 1200px;
+    margin: auto;
+    /* background-color: lightgray; */
+    margin-top: 50px;
+    display: flex;
+    /* gap: 50px */
+}
+
+.Quran-body {
+    width: 1100px;
+    /* background-color: gray; */
+    margin: auto;
+    display: flex;
+    justify-content: left;
+}
+
+.Quran-body img {
+    width: 300px
+}
+
+.Quran-content {
+    padding: 20px 20px;
+    margin-right: 20px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    /* background-color: violet; */
+
+}
+
+.Quran-content h1 {
+    font-size: 30px;
+    margin: 0;
+    color: #003300;
+    margin-bottom: 5px
+}
+
+.Quran-content h3 {
+    margin: 0;
+    color: #008000;
+    font-size: 18px;
+    margin-bottom: 25px
+}
+
+.Quran-content p {
+    margin: 0;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.Quran-image {
+    display: flex;
+    justify-content: center
+}
+
+.Quran-image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 30px
+    
+}
+
+
+
+/*--------Responsive Design--------*/
+
+@media(max-width: 1135px) {
+    .overlay3 {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .Quran-body {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Quran-body img {
+        width: 250px
+    }
+
+    .Quran-content {
+        padding: 40px;
+        margin-top: -50px;
+
+    }
+
+    .Quran-content h1 {
+        font-size: 30px
+    }
+
+}

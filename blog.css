@@ -1,0 +1,232 @@
+/*-----------Navbar Design-------------------  */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Arial, sans-serif;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll bar */
+}
+
+.container {
+    background-color: white;
+    border: 1px solid rgb(183, 183, 183);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 225px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #00000099;
+}
+
+nav ul li a.active {
+    color: #003300;
+}
+
+.navbar ul li:last-child a {
+    color: #00000099;
+}
+
+.navbar ul button {
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 3px solid gray;
+    font-weight: 600;
+    color: gray;
+    background-color: white;
+}
+
+.download-btn:hover {
+    background-color: #003300;
+    color: white;
+    border: 3px solid #003300;
+
+}
+
+
+
+.navbar ul li:not(:last-child) {
+    border-bottom: none !important;
+    border-right: none !important;
+}
+
+
+
+.navbar .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px !important;
+}
+
+.logo img {
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*-----------Navbar Design-------------------  */
+
+
+/*-----------Header Design-------------------  */
+
+.banner {
+    width: 100vw;
+    height: 500px;
+    margin-top: 100px;
+    /* background-color: red; */
+    padding: 0;
+    overflow: hidden;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    max-width: 1400px;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 5px
+}
+
+.left-content {
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    font-style: italic;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+.left-content h1 {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 5px darkgray;
+    font-size: 100px;
+}
+
+/*-----------Header Design-------------------  */
+
+.blog-section {
+    width: 100vw;
+    
+    /* margin-top: 80px; */
+    /* background-color: red; */
+    padding: 0;
+    overflow: hidden;
+}
+
+.overlay1 {
+    width: 100%;
+    height: 100%;
+}
+
+.content1 {
+    max-width: 1400px;
+    margin: auto;
+    background-color: lightgray;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    border-radius: 5px
+}
+
+
+.boxes {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.blog-container {
+    background-color: gray;
+    border-radius: 7px;
+    margin: auto;
+    padding: 20px
+}
+
+
+
+.blog-container img {
+    width: 300px;
+    border-radius: 7px
+
+}
+
+
+.blog-content {
+    text-align: center;
+}
+
+.left-content1 {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.right-content1 {
+    background-color: whitesmoke;
+    padding: 40px;
+    margin: 20px 20px 20px 0;
+    border-radius: 7px;
+}
+
+
+

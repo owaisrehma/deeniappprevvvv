@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="navhome.css">
+</head>
+
+<body>
+    <!----------Nav bar------------------->
+    <section class="navbar-section" style="position:fixed; top:0; left:0; width:100vw; z-index:1000; background:white;">
+        <div class="container">
+            <nav class="navbar-logo">
+                <div class="logo"><img src="./headerlogo.png" alt="Logo" width="150px"></div>
+            </nav>
+            <nav class="navbar">
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul id="navbar-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./feature.html">Feature</a></li>
+                    <li><a href="./blog.html" class="active">Blog</a></li>
+                    <li><button class="download-btn"><a href="./download.html"
+                                style="color:inherit;text-decoration:none;">Download
+                                App</a></button></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!----------Nav bar over------------------->
+    <!----------Header section over------------------->
+    <section class="banner">
+        <div class="overlay">
+            <div class="content">
+                <div class="left-content">
+                    <img src="madinah.png" alt="Background">
+                    <h1>Islamic Blogs</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------Header section over------------------->
+    <!----------Blog section------------------->
+    <section class="blog-section">
+        <div class="overlay1">
+            <div class="content1">
+                <div class="left-content1"> <!-----blog-->
+                    <div class="boxes">
+                        <!------------------------>
+                        <div class="blog-container">
+                            <a href="blog1.html" class="blog-card">
+                                <img src="./dates.jpg" alt="img">
+                                <div class="blog-content">
+                                    <h3>Roza Kin Cheezon Se Toot Ta Hai</h3>
+                                    <p>Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!------------------------>
+                        <div class="blog-container">
+                            <a href="#" class="blog-card">
+                                <img src="./dates.jpg" alt="img">
+                                <div class="blog-content">
+                                    <h3>Roza Kin Cheezon Se Toot Ta Hai</h3>
+                                    <p>Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!------------------------>
+                        <div class="blog-container">
+                            <a href="#" class="blog-card">
+                                <img src="./dates.jpg" alt="img">
+                                <div class="blog-content">
+                                    <h3>Roza Kin Cheezon Se Toot Ta Hai</h3>
+                                    <p>Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!------------------------>
+                        <div class="blog-container">
+                            <a href="#" class="blog-card">
+                                <img src="./dates.jpg" alt="img">
+                                <div class="blog-content">
+                                    <h3>Roza Kin Cheezon Se Toot Ta Hai</h3>
+                                    <p>Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!------------------------>
+                        <div class="blog-container">
+                            <a href="#" class="blog-card">
+                                <img src="./dates.jpg" alt="img">
+                                <div class="blog-content">
+                                    <h3>Roza Kin Cheezon Se Toot Ta Hai</h3>
+                                    <p>Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!------------------------>
+                        <div class="blog-container">
+                            <a href="#" class="blog-card">
+                                <img src="./dates.jpg" alt="img">
+                                <div class="blog-content">
+                                    <h3>Roza Kin Cheezon Se Toot Ta Hai</h3>
+                                    <p>Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="right-content1">
+                        <h3>Catagories</h3>
+                        <ul>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Startups</a></li>
+                            <li><a href="#">Productivity</a></li>
+                        </ul>
+                        <h3>Recent Post</h3>
+                        <ul>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Startups</a></li>
+                            <li><a href="#">Productivity</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------Blog section over------------------->
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        // navbar--------------->
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbarList = document.getElementById('navbar-list');
+        menuToggle.addEventListener('click', () => {
+            navbarList.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+    </script>
+</body>
+
+</html>
